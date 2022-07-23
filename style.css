@@ -4,3 +4,37 @@
 	padding:  0;
 	box-sizing: border-box;
 }
+
+.menu-bar{
+	background-image: linear-gradient(-90deg, #414141, #7F8C8D);
+}
+
+.nav-link {
+	font-size: 16px;
+	margin: 3px;
+	color: #fff!important;
+	font-weight: 500;
+}
+
+.nav-link:hover {
+	color: linear-gradient(-90deg, #414141, #7F8C8D);
+	font-weight: 600;
+	border-bottom: 1px solid;
+}
+
+body {
+	background-image: url(./images/background.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+#landingPage, #footer {
+	background-image: linear-gradient(-90deg, #414141, #7F8C8D);
+}
+
+#image {
+	height: 200px;
+	width: 200px;
+	border-radius: 10px;
+}
