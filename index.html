@@ -23,7 +23,7 @@
 </head>
 <body>
 	<!-- Navbar Start -->
-	<div class="header align-items-center fixed-top">
+	<div class="header text-center fixed-top">
 		<div class="menu-bar">
 			<nav class="navbar navbar-expand-lg navbar-light">
   				<a class="navbar-brand" href="#"><i class="fa-solid fa-user-astronaut"></i></a>
@@ -39,7 +39,10 @@
         					<a class="nav-link" href="#pics">Gallery</a>
       					</li>
       					<li class="nav-item">
-					        <a class="nav-link" href="#">My Projects</a>
+					        <a class="nav-link" href="#projects">My Project/s</a>
+					    </li>
+					    <li class="nav-item">
+					        <a class="nav-link" href="#talk">Let's Talk!</a>
 					    </li>
     				</ul>
  				 </div>
@@ -49,24 +52,27 @@
 	<!-- Navbar End -->
 
 	<!-- Container: Landing Page START -->
-	<div class="container pt-5" id="landing">
-	 	<div class="row d-none d-md-flex flex-column align-items-center mt-5 jumbotron text-light" id="landingPage">
-		 	<span class="col-12 col-md-4 text-center">
-		 		<img id="image" class="img-fluid" src="./images/paul.jpg" alt="Paul Photo">
-		 	</span>
-		 	<span class="col-12 col-md-6 text-center">
-		 		<h1 class="font-weight-bold mt-4 mb-2">Hi, I'm Paul!</h1>
-		 		<p class="my-2">
-		 			I will be a Full-stack Web Developer, 3 years from now.
+	<div class="container-fluid" id="landing">
+	 	<div class="row jumbotron align-items-center text-light vh-100" id="landingPage">
+		 	<div class="col-12 col-lg-8 text-center order-2 order-lg-1" id=font-2>		
+		 		<h1 class="font-weight-bold text-center">Hi, I'm Paul!</h1>
+		 		<p class="my-2 text-center ml-2" id="font-3">
+		 			I will be a Full-stack Web Developer, 3 years from now. I love listening to music, audiobooks and watching movies and also from now on, coding will be added to those if I really want to be a Web Developer.
 		 		</p>
-		 	</span>
+		 	</div>
+		 	<div class="col-12 col-lg-4 text-center order-1 order-lg-2">
+		 		<img id="image" class="img-fluid" src="./images/paul.jpg" alt="Paul Photo">
+		 	</div>
 		</div>
 	</div>
 	<!-- Container: Landing Page END -->
 
 	<!-- Carousel Start -->
-	<div class="row pt-4" id="pics">
-		<div class="col-12 col-md-6 mx-auto">
+	<div class="col-12 mt-5 mb-3 text-light text-center" id="pics">
+		<h2 class="font-weight-bold">Gallery</h2>
+	</div>
+	<div class="row">
+		<div class="col-12 col-lg-6 mx-auto">
 			<div class="carousel slide" data-ride="carousel" id="carouselExampleIndicators">
 				<ol class="carousel-indicators">
 					<li class="active" data-target="#carouselExampleIndicators" data-slide-to="0"></li>
@@ -101,24 +107,98 @@
 	</div>
 	<!-- Carousel End -->
 
-	<!-- My Projects Start -->
-	<!-- My Projects End -->
+	<!-- My Project/s Start -->
+	<div class="text-center pt-3 mt-5 mb-3">
+		<h2 class=" font-weight-bold text-center text-light">My Project/s</h2>
+	</div>
+	<div class="container text-center vh-100" id="projects">
+		<div class="row pt-5">
+			<div class="col-lg-12 order order-1 order-lg-2">
+				<img src="./images/logo-bootstrap.png" alt="html image">
+				<h4><a href="https://juanpablocodes.github.io/galela-fcb-portfolio/" target="_blank">Basic Portfolio</a></h4>
+				<p>This is my Zuitt's Free Coding Bootcamp Web Portfolio.</p>
+			</div>
 
-	<!-- Gallery Start -->
-	<!-- Gallery End -->
+			<div class="col-lg-12 order order-2 order-lg-1">
+				<div>
+					<img src="./images/logo-html5.png" alt="HTML Logo">
+					<h4><a href="https://gitlab.com/juanpablocodes/s04-b" target="_blank">Basic HTML</a></h4>
+					<p>This is my Basic HTML project here in Zuitt.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- My Project/s End -->
+
+	<!-- Let's Talk Start -->
+	<div class="container-fluid pt-3 text-light" id="talk">
+		<h2 class="text-center font-weight-bold pt-5 pb-3">Let's Talk!</h2>
+		<div class="row">
+			<div class="col-lg-6 order order-1 order-lg-1 text-center">
+				<h3 >Drop-by Here!</h3>
+				<iframe id="drop"src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3859.793456880254!2d121.0543399!3d14.6676597!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397b7475862cd79%3A0x94f56640a3291295!2sSan%20Antonio%20Homes!5e0!3m2!1sfil!2sph!4v1658715568103!5m2!1sfil!2sph" width="500" height="500" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+			</div>
+			<div class="col-lg-6 order order-2 order-lg-2 min-vh-100">
+				<h3 class="text-center">Send Me A Message!</h3>
+				<form class="py-3 px-3" id="message">
+					<div class="form-group">
+						<label for="txt-username">Name:</label>
+						<input class="form-control" id="txt-username" type="text" name="name" placeholder="Enter Full Name" required />	
+					</div>
+					<div class="form-group">
+						<label for="txt-email">Email Address:</label>
+						<input class="form-control" id="txt-email" type="text" name="email" placeholder="sample@sample.com" required/>	
+					</div>
+					<div class="form-group">
+						<label for="txt-services">Services:</label>
+						<select class="form-control" id="txt-services" name="services">
+							<option>Front-end Developer</option>
+							<option>Back-end Developer</option>
+							<option>Full Stack Web Developer</option>
+							<option>Others</option>
+						</select>
+					</div>
+					
+					<div class="form-group">
+						<label for="txt-message">Message:</label>
+						<textarea class="form-control" id="txt-message" rows="5" required></textarea>
+					</div>
+
+                	<button type="button" class="btn btn-block bg-success btn-lg" data-toggle="modal" data-target="#myModal">Submit</button>
+                	<button type="button" class="btn btn-block bg-danger" data-toggle="modal" data-target="#">Reset</button>
+                    <div id="myModal" class="modal fade" role="dialog">
+                        <div class="modal-dialog text-center">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close"></button>
+                                    <h4 class="modal-title text-success"> YOU'RE ALL GOOD! HOPING TO TALK YOU SOON!</h4>
+                                </div>
+
+                                <div class="modal-footer">
+                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                            	</div>
+                        	</div>
+                    	</div>
+                    </div>
+				</form>
+			</div>
+		</div>
+	</div>
+	<!-- Let's Talk End -->
 
 	<!-- Footer Start -->
-	<footer class="text-center pt-2 mt-5 bg-dark" id="footer">
-		<p class="text-white">
-			Check me out on Social Media
-		</p>
-		<div class="">
-			<a class="text-white mx-2" target="_blank" href="https://facebook.com">
+	<footer class="py-3 text-center" id="footer">
+		<h5 class=" font-weight-bold text-white">Check Me On Social Media:</p>
+		</h5>
+			<a class="text-white" target="_blank" href="https://facebook.com/jhonpaul.galela">
 				<i class="fa-brands fa-facebook fa-icons"></i>
 			</a>
-			<a class="text-white mx-2" target="_blank" href="https://instagram.com">
+			<a class="text-white mx-2" target="_blank" href="https://instagram.com/waan_pablooo/">
 				<i class="fa-brands fa-instagram-square fa-icons"></i>
 			</a>
+		<p class="text-white pt-4">
+			All Rights Reserved 2022
+		</p>
 		</div>
 	</footer>
 	<!-- Footer End -->

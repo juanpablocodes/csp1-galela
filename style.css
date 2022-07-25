@@ -3,6 +3,7 @@
 	margin: 0;
 	padding:  0;
 	box-sizing: border-box;
+	scroll-behavior: smooth;
 }
 
 .menu-bar{
@@ -23,18 +24,25 @@
 }
 
 body {
-	background-image: url(./images/background.jpg);
+	background-image: url(./images/bg8.jpg);
 	background-size: cover;
-	background-repeat: no-repeat;
+	background-repeat: repeat;
 	background-position: center;
+	overflow-y: scroll;
+	overflow-x: hidden;
 }
 
 #landingPage, #footer {
 	background-image: linear-gradient(-90deg, #414141, #7F8C8D);
 }
 
-#image {
-	height: 200px;
-	width: 200px;
+#image {	
+	height: 300px;
+	width: 300px;
 	border-radius: 10px;
+}
+
+#projects, #message, #drop {
+	border-radius: 10px;
+	background-image: linear-gradient(-90deg, #414141, #7F8C8D);
 }
