@@ -26,10 +26,10 @@
 body {
 	background-image: url(./images/bg8.jpg);
 	background-size: cover;
-	background-repeat: repeat;
+	background-repeat: no-repeat;
 	background-position: center;
-	overflow-y: scroll;
 	overflow-x: hidden;
+	overflow-y: scroll;
 }
 
 #landingPage, #footer {
